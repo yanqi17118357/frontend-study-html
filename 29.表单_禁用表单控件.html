@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://search.jd.com/search" target="_blank">
+
+        <!-- 多选框 -->
+        爱好：
+        <input type="checkbox" name="hobby" value="chouyan" checked disabled>抽烟
+        <input type="checkbox" name="hobby" value="hejiu" disabled>喝酒
+        <input type="checkbox" name="hobby" value="tangtou">烫头<br>
+        <!-- 隐藏域 -->
+        <input type="hidden" name="from" value="toutiao">
+
+        其他：
+        <textarea name="other" cols="22" rows="5" disabled></textarea><br>
+        籍贯：
+        <select name="place">
+            <option value="冀">河北</option>
+            <option value="鲁" disabled>山东</option>
+            <option value="晋">山西</option>
+            <option value="粤" selected>广东</option>
+        </select>
+        
+        <br>
+        <!-- 确认按钮 -->
+        <button disabled>确认</button>
+        <input type="submit" value="input实现的确认"><br>
+
+    </form>
+</body>
+</html>
